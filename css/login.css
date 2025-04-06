@@ -1,0 +1,109 @@
+@media only screen and (min-width: 1199px) {
+    .login {
+        width: 80%;
+        max-width: 30%;
+        margin: 100px auto;
+        background-color: #f8f8f8;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .login {
+        width: 80%;
+        max-width: 400px;
+        margin: 100px auto;
+        background-color: #f8f8f8;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    color: #000a37;
+    text-align: center;
+}
+
+.input label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000a37;
+}
+
+
+    .input input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+
+.button-container {
+    gap: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-container button {
+    width: calc(50% - 20px);
+    position: relative;
+    left: -10px;
+    padding: 12px;
+    background-color: #000a37;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s ease;
+    font-size: 16px;
+}
+
+.button-container button:last-child {
+    background-color: #ccc;
+}
+
+.button-container button:last-child:hover {
+    background-color: #999;
+}
+
+.button-container #cwLoginBtn:hover {
+    background-color: transparent;
+    border: 1px solid #000a37;
+    color: #000a37;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1199px) {
+    .login {
+        width: 90%;
+        max-width: none;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .login h2 {
+        font-size: 1.5rem;
+    }
+
+    .input input {
+        width: calc(100% - 20px);
+    }
+
+    .button-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .button-container button {
+        width: auto;
+    }
+}

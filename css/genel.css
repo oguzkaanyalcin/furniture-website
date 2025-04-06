@@ -1,0 +1,336 @@
+body {
+    font-family: Mont, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    color: #000a37;
+    padding: 0;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .16);
+    position: relative;
+    z-index: 1000;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    display: block;
+    max-width: 150px;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #000a37;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar ul li:hover>.customMenu {
+    display: block;
+}
+
+.customMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: none;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.customMenu li {
+    padding: 5px 20px;
+}
+
+.customMenu li a {
+    color: #000a37;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #000a37;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#searchBox {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #000a37;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000a37;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+#searchBox:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#results {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+
+.result-item {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee !important;
+    cursor: pointer;
+}
+
+.result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.sepet {
+    color: #000a37;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.sepetUrunSayisi {
+    font-size: 12px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #000a37;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.uyelik {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.uyelik a {
+    color: #000a37;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 10px;
+}
+
+.uyelik a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.user-icon {
+    color: #000a37;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.heartsClick {
+    color: #000a37;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.category-navbar {
+    background-color: #fff;
+    border-top: 1px solid #eeeeee !important;
+    border-bottom: 1px solid #eeeeee !important;
+    padding: 10px 0;
+}
+
+.category-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.category-navbar ul li {
+    margin: 0 15px;
+}
+
+.category-navbar ul li a {
+    color: #000a37;
+    text-decoration: none;
+    font-size: 11px;
+    transition: color 0.3s;
+    letter-spacing: .55px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.category-navbar ul li {
+    padding: 0 .5em .25em;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.category-navbar ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000a37;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.category-navbar ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.top-navbar {
+    border-bottom: 1px solid #eeeeee !important;
+    margin-bottom: -10px;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 800px;
+}
+
+.contact-info ul li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    #searchBox {
+        width: calc(100% - 40px);
+    }
+
+    .actions {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .category-navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info ul {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
