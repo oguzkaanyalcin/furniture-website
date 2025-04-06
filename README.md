@@ -8,7 +8,7 @@ Proje, PHP kullanılarak kullanıcı dostu bir arayüzle geliştirilmiştir. MyS
 
 ## Ana sayfa Görünümü
 
-![Anasayfa](images/1.png)
+![Ana sayfa](images/1.png)
 
 ## Kategoriye Göre Ürün Listeleme Sayfası
 
