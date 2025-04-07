@@ -46,5 +46,5 @@ Proje, PHP kullanılarak kullanıcı dostu bir arayüzle geliştirilmiştir. MyS
 
 ## Geliştiriciler
 
-- [Bora Kitirci](https://github.com/bboraki)
+- [Bora Kitirci](https://github.com/borakitirci)
 - [Oğuz Kaan Yalçın](https://github.com/oguzkaanyalcin)
